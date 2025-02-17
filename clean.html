@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clean-styles.css">
+    <link rel="stylesheet" href="transition.css">
+    <style>
+        /* Add critical CSS to prevent FOUC (Flash of Unstyled Content) */
+        body { opacity: 0; }
+        .loaded { opacity: 1; transition: opacity 0.5s ease; }
+    </style>
+</head>
+<body class="loaded">
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">Priyanshu</a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Computer Science Engineer</h1>
+                    <p>Transforming ideas into elegant solutions through code</p>
+                    <button class="cta-button">View Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <h3 class="profile-title">Priyanshu</h3>
+                        <p class="profile-subtitle">Computer Science Engineer</p>
+                    </div>
+                    <div class="profile-content">
+                        <div class="info-grid">
+                            <!-- Core Info -->
+                            <div class="info-block">
+                                <h4 class="block-title">Core Information</h4>
+                                <div class="info-line">
+                                    <span class="label">Role</span>
+                                    <span class="value">Computer Science Engineer</span>
+                                </div>
+                                <div class="info-line">
+                                    <span class="label">Education</span>
+                                    <span class="value">B.E. CSE</span>
+                                </div>
+                                <div class="info-line">
+                                    <span class="label">Institution</span>
+                                    <span class="value">CCET</span>
+                                </div>
+                            </div>
+
+                            <!-- Expertise -->
+                            <div class="info-block">
+                                <h4 class="block-title">Areas of Expertise</h4>
+                                <div class="expertise-grid">
+                                    <div class="expertise-item">
+                                        <div class="expertise-name">Frontend Development</div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Add more expertise items as needed -->
+                                </div>
+                            </div>
+
+                            <!-- Current Projects -->
+                            <div class="info-block">
+                                <h4 class="block-title">Current Projects</h4>
+                                <div class="process-item">
+                                    <span class="process-name">AI Development</span>
+                                    <span class="process-status running">Active</span>
+                                </div>
+                                <div class="process-item">
+                                    <span class="process-name">System Architecture</span>
+                                    <span class="process-status pending">In Progress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="terminal-title">project_manager.exe</span>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="project-filters">
+                            <span class="filter-label">$ filter --type</span>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-filter="all">ALL</button>
+                                <button class="filter-btn" data-filter="python">PYTHON</button>
+                                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                                <button class="filter-btn" data-filter="web">WEB</button>
+                            </div>
+                        </div>
+                        <div class="projects-grid">
+                            <!-- Python Project -->
+                            <div class="project-card" data-category="python">
+                                <div class="card-header">
+                                    <div class="project-meta">
+                                        <span class="project-id">[PID_001]</span>
+                                        <span class="project-status">COMPLETED</span>
+                                    </div>
+                                    <h3 class="project-title">Web Crawler & Scraper</h3>
+                                </div>
+                                <div class="card-content">
+                                    <pre class="code-preview">
+<span class="code-comment"># Project Overview</span>
+class WebCrawler:
+    <span class="code-comment">"""Advanced data extraction system"""</span>
+    features = [
+        "Automated scraping",
+        "Data cleaning",
+        "Pattern recognition"
+    ]</pre>
+                                    <div class="project-info">
+                                        <div class="info-section">
+                                            <span class="info-label">Description:</span>
+                                            <p>Advanced web crawler for automated data extraction and analysis with intelligent parsing.</p>
+                                        </div>
+                                        <div class="tech-stack">
+                                            <span class="tech-label">Tech Stack:</span>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">Python</span>
+                                                <span class="tech-tag">BeautifulSoup</span>
+                                                <span class="tech-tag">Pandas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-actions">
+                                        <a href="#" class="action-btn">
+                                            <span class="action-icon">⌘</span>
+                                            <span>View Source</span>
+                                        </a>
+                                        <a href="#" class="action-btn">
+                                            <span class="action-icon">▶</span>
+                                            <span>Live Demo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AI/ML Project -->
+                            <div class="project-card" data-category="ai">
+                                <div class="card-header">
+                                    <div class="project-meta">
+                                        <span class="project-id">[PID_002]</span>
+                                        <span class="project-status">COMPLETED</span>
+                                    </div>
+                                    <h3 class="project-title">Movie Recommendation System</h3>
+                                </div>
+                                <div class="card-content">
+                                    <pre class="code-preview">
+<span class="code-comment"># ML Model Implementation</span>
+class RecommendationEngine:
+    <span class="code-comment">"""Content-based filtering system"""</span>
+    features = [
+        "Data vectorization",
+        "Similarity matching",
+        "Personalized recommendations"
+    ]</pre>
+                                    <div class="project-info">
+                                        <div class="info-section">
+                                            <span class="info-label">Description:</span>
+                                            <p>Movie recommendation system using machine learning for personalized recommendations. Implements data vectorization and similarity matching.</p>
+                                        </div>
+                                        <div class="tech-stack">
+                                            <span class="tech-label">Tech Stack:</span>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">Python</span>
+                                                <span class="tech-tag">scikit-learn</span>
+                                                <span class="tech-tag">NumPy</span>
+                                                <span class="tech-tag">Pandas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-actions">
+                                        <a href="#" class="action-btn">
+                                            <span class="action-icon">⌘</span>
+                                            <span>View Source</span>
+                                        </a>
+                                        <a href="#" class="action-btn">
+                                            <span class="action-icon">▶</span>
+                                            <span>Live Demo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Web Dev Project -->
+                            <div class="project-card" data-category="web">
+                                <div class="card-header">
+                                    <div class="project-meta">
+                                        <span class="project-id">[PID_003]</span>
+                                        <span class="project-status active">IN PROGRESS</span>
+                                    </div>
+                                    <h3 class="project-title">Portfolio Website</h3>
+                                </div>
+                                <div class="card-content">
+                                    <pre class="code-preview">
+<span class="code-comment">/* Matrix Theme Implementation */</span>
+const MatrixEffect = {
+    features: [
+        "Interactive UI",
+        "Matrix rain effect",
+        "Terminal aesthetics",
+        "Responsive design"
+    ]
+}</pre>
+                                    <div class="project-info">
+                                        <div class="info-section">
+                                            <span class="info-label">Description:</span>
+                                            <p>Personal portfolio website showcasing projects and skills with a unique matrix/terminal theme. Features interactive elements and responsive design.</p>
+                                        </div>
+                                        <div class="tech-stack">
+                                            <span class="tech-label">Tech Stack:</span>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">HTML5</span>
+                                                <span class="tech-tag">CSS3</span>
+                                                <span class="tech-tag">JavaScript</span>
+                                                <span class="tech-tag">Canvas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-actions">
+                                        <a href="#" class="action-btn">
+                                            <span class="action-icon">⌘</span>
+                                            <span>View Source</span>
+                                        </a>
+                                        <a href="#" class="action-btn">
+                                            <span class="action-icon">▶</span>
+                                            <span>Live Demo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="category-icon">01</div>
+                        <h3 class="category-name">Programming & Scripting Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Libraries -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="category-icon">02</div>
+                        <h3 class="category-name">Tools & Libraries</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">MATLAB</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">XAMPP</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">LaTeX</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NumPy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design & Modeling -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="category-icon">03</div>
+                        <h3 class="category-name">Design & Modeling</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Blender</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Unreal Engine</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">After Effects</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Illustrator</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-input" placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-input" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="pageToggle" class="page-toggle">Matrix mode</button>
+    <script src="page-transition.js"></script>
+    <script>
+        // Add this script to ensure content is visible
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+/* Core Theme Variables */
+.clean-theme {
+    /* Colors */
+    --primary: #4f46e5;
+    --primary-light: #6366f1;
+    --primary-dark: #4338ca;
+    --secondary: #64748b;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #f1f5f9;
+    --border-color: #e2e8f0;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+
+    /* Spacing */
+    --spacing-base: 1rem;
+    --section-padding: 6rem;
+
+    /* Transitions */
+    --transition: all 0.3s ease;
+
+    /* Override any remaining glow variables */
+    --glow: none;
+}
+
+/* Base Styles */
+.clean-theme body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Typography */
+.clean-theme h1, 
+.clean-theme h2, 
+.clean-theme h3 {
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.clean-theme p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Section Base */
+.clean-theme section {
+    padding: var(--section-padding) 0;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Container */
+.clean-theme .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-base);
+}
+
+/* Remove Matrix Elements */
+.clean-theme #matrixCanvas,
+.clean-theme .terminal-controls,
+.clean-theme .loading-sequence,
+.clean-theme .terminal-prompt,
+.clean-theme .matrix-header {
+    display: none;
+}
+
+/* Remove all glows and matrix effects from clean theme */
+.clean-theme * {
+    text-shadow: none !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.clean-theme .project-status.running,
+.clean-theme .project-status.active,
+.clean-theme .process-status,
+.clean-theme .status-value,
+.clean-theme .skill-progress,
+.clean-theme .progress-fill,
+.clean-theme .terminal-text,
+.clean-theme .project-title,
+.clean-theme .section-title,
+.clean-theme .hero-content h1,
+.clean-theme .info-label,
+.clean-theme .skill-header,
+.clean-theme .terminal-title {
+    text-shadow: none;
+    animation: none;
+}
+
+.clean-theme .project-card:hover,
+.clean-theme .skill-category:hover,
+.clean-theme .info-block:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-color);
+}
+
+.clean-theme .cta-button,
+.clean-theme .matrix-button,
+.clean-theme .theme-switch,
+.clean-theme .action-btn {
+    box-shadow: var(--shadow-md);
+}
+
+.clean-theme .cta-button:hover,
+.clean-theme .matrix-button:hover,
+.clean-theme .theme-switch:hover,
+.clean-theme .action-btn:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+/* Remove matrix scan effects */
+.clean-theme .project-item::after,
+.clean-theme .skill-node::before {
+    display: none;
+}
+
+/* Theme Switch Button */
+.theme-switch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 12px 24px;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-switch:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Professional Navbar Styles */
+.clean-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.clean-theme .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: var(--shadow-md);
+}
+
+.clean-theme .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clean-theme .nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.clean-theme .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.clean-theme .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.clean-theme .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.clean-theme .nav-links a:hover::after,
+.clean-theme .nav-links a.active::after {
+    width: 100%;
+}
+
+.clean-theme .nav-links a:hover,
+.clean-theme .nav-links a.active {
+    color: var(--primary);
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .clean-theme .nav-inner {
+        padding: 0 1rem;
+    }
+
+    .clean-theme .nav-links {
+        gap: 1.5rem;
+    }
+
+    .clean-theme .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Theme Transition */
+.theme-transition {
+    transition: all 0.5s ease;
+}
+
+/* Matrix Theme (Default) */
+:root {
+    --primary: #00ff00;
+    --dark: #000000;
+    --light: #ffffff;
+    --glow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Matrix Theme Specific Styles */
+#matrixCanvas {
+    display: block;
+    opacity: 0.1;
+}
+
+/* Clean Theme Overrides */
+.clean-theme #matrixCanvas {
+    display: none;
+}
+
+.clean-theme body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Add more theme-specific styles as needed */

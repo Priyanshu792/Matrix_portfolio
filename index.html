@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Dev</title>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="matrix.js" as="script">
+    <link rel="preload" href="app.js" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="transition.css">
+    <script defer src="theme-switcher.js"></script>
+    <script src="page-transition.js"></script>
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">[Matrix.Dev]</a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>INITIALIZING PROFILE: PRIYANSHU</h1>
+                <p>{'role': 'Computer Science Engineer', 'status': 'active'}</p>
+                <button class="cta-button">VIEW PORTFOLIO</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">> Identity.load()</h2>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="terminal-title">user_profile.sh</span>
+                    </div>
+                    <div class="terminal-screen">
+                        <div class="profile-data">
+                            <pre class="matrix-header">
+=============================
+  SECURE SYSTEM - ACCESSED  
+============================= </pre>
+                            
+                            <div class="terminal-line">
+                                <span class="line-number">01</span>
+                                <span class="line-content">
+                                    <span class="command">> Initializing profile scan...</span>
+                                </span>
+                            </div>
+
+                            <div class="data-container">
+                                <div class="info-block">
+                                    <span class="block-title">// CORE DATA</span>
+                                    <div class="info-line"><span class="label">Role:</span> Computer Science Engineer</div>
+                                    <div class="info-line"><span class="label">Education:</span> B.E. CSE</div>
+                                    <div class="info-line"><span class="label">Institution:</span> CCET</div>
+                                </div>
+
+                                <div class="info-block">
+                                    <span class="block-title">// EXPERTISE</span>
+                                    <div class="expertise-grid">
+                                        <div class="expertise-item">
+                                            <div class="expertise-name">Frontend</div>
+                                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                                        </div>
+                                        <div class="expertise-item">
+                                            <div class="expertise-name">Backend</div>
+                                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                                        </div>
+                                        <div class="expertise-item">
+                                            <div class="expertise-name">DevOps</div>
+                                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-block">
+                                    <span class="block-title">// CURRENT PROCESSES</span>
+                                    <div class="process-list">
+                                        <div class="process-item">
+                                            <span class="process-id">[PID:001]</span>
+                                            <span class="process-name">AI Development</span>
+                                            <span class="process-status running">RUNNING</span>
+                                        </div>
+                                        <div class="process-item">
+                                            <span class="process-id">[PID:002]</span>
+                                            <span class="process-name">System Architecture</span>
+                                            <span class="process-status pending">PENDING</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="terminal-prompt">
+                                <span class="prompt-marker">></span>
+                                <span class="prompt-text">_</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Projects Section -->
+    <section id="projects" class="matrix-projects">
+    <div class="container">
+        <h2 class="section-title">> Projects.execute()</h2>
+        <div class="project-terminal">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <span class="control red"></span>
+                    <span class="control yellow"></span>
+                    <span class="control green"></span>
+                </div>
+                <span class="terminal-title">project_manager.exe</span>
+            </div>
+            <div class="terminal-content">
+                <div class="project-filters">
+                    <span class="filter-label">$ filter --type</span>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">ALL</button>
+                        <button class="filter-btn" data-filter="python">PYTHON</button>
+                        <button class="filter-btn" data-filter="ai">AI/ML</button>
+                        <button class="filter-btn" data-filter="web">WEB</button>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Python Project -->
+                    <div class="project-card" data-category="python">
+                        <div class="card-header">
+                            <div class="project-meta">
+                                <span class="project-id">[PID_001]</span>
+                                <span class="project-status">COMPLETED</span>
+                            </div>
+                            <h3 class="project-title">Web Crawler & Scraper</h3>
+                        </div>
+                        <div class="card-content">
+                            <pre class="code-preview">
+<span class="code-comment"># Project Overview</span>
+class WebCrawler:
+    <span class="code-comment">"""Advanced data extraction system"""</span>
+    features = [
+        "Automated scraping",
+        "Data cleaning",
+        "Pattern recognition"
+    ]</pre>
+                            <div class="project-info">
+                                <div class="info-section">
+                                    <span class="info-label">Description:</span>
+                                    <p>Advanced web crawler for automated data extraction and analysis with intelligent parsing.</p>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-label">Tech Stack:</span>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">BeautifulSoup</span>
+                                        <span class="tech-tag">Pandas</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="#" class="action-btn">
+                                    <span class="action-icon">⌘</span>
+                                    <span>View Source</span>
+                                </a>
+                                <a href="#" class="action-btn">
+                                    <span class="action-icon">▶</span>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI/ML Project -->
+                    <div class="project-card" data-category="ai">
+                        <div class="card-header">
+                            <div class="project-meta">
+                                <span class="project-id">[PID_002]</span>
+                                <span class="project-status">COMPLETED</span>
+                            </div>
+                            <h3 class="project-title">Movie Recommendation System</h3>
+                        </div>
+                        <div class="card-content">
+                            <pre class="code-preview">
+<span class="code-comment"># ML Model Implementation</span>
+class RecommendationEngine:
+    <span class="code-comment">"""Content-based filtering system"""</span>
+    features = [
+        "Data vectorization",
+        "Similarity matching",
+        "Personalized recommendations"
+    ]</pre>
+                            <div class="project-info">
+                                <div class="info-section">
+                                    <span class="info-label">Description:</span>
+                                    <p>Movie recommendation system using machine learning for personalized recommendations. Implements data vectorization and similarity matching.</p>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-label">Tech Stack:</span>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">scikit-learn</span>
+                                        <span class="tech-tag">NumPy</span>
+                                        <span class="tech-tag">Pandas</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="#" class="action-btn">
+                                    <span class="action-icon">⌘</span>
+                                    <span>View Source</span>
+                                </a>
+                                <a href="#" class="action-btn">
+                                    <span class="action-icon">▶</span>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Dev Project -->
+                    <div class="project-card" data-category="web">
+                        <div class="card-header">
+                            <div class="project-meta">
+                                <span class="project-id">[PID_003]</span>
+                                <span class="project-status active">IN PROGRESS</span>
+                            </div>
+                            <h3 class="project-title">Portfolio Website</h3>
+                        </div>
+                        <div class="card-content">
+                            <pre class="code-preview">
+<span class="code-comment">/* Matrix Theme Implementation */</span>
+const MatrixEffect = {
+    features: [
+        "Interactive UI",
+        "Matrix rain effect",
+        "Terminal aesthetics",
+        "Responsive design"
+    ]
+}</pre>
+                            <div class="project-info">
+                                <div class="info-section">
+                                    <span class="info-label">Description:</span>
+                                    <p>Personal portfolio website showcasing projects and skills with a unique matrix/terminal theme. Features interactive elements and responsive design.</p>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-label">Tech Stack:</span>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS3</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Canvas</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="#" class="action-btn">
+                                    <span class="action-icon">⌘</span>
+                                    <span>View Source</span>
+                                </a>
+                                <a href="#" class="action-btn">
+                                    <span class="action-icon">▶</span>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">> Skills.analyze()</h2>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control green"></span>
+                    </div>
+                    <span class="terminal-title">skills_scanner.exe</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="loading-sequence">
+                        <div class="sequence-line">> Initializing skill scan...</div>
+                        <div class="sequence-line">> Loading neural network...</div>
+                        <div class="sequence-line">> Analyzing proficiency data...</div>
+                    </div>
+                    <div class="skills-grid">
+                        <!-- Programming Languages -->
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="category-icon">[01]</span>
+                                <span class="category-name">Programming Languages</span>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 92%"></div>
+                                    </div>
+                                    <span class="skill-value">92%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                    <span class="skill-value">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C++</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                    <span class="skill-value">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                    <span class="skill-value">95%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">CSS</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <span class="skill-value">90%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-value">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Libraries -->
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="category-icon">[02]</span>
+                                <span class="category-name">Tools & Libraries</span>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">MATLAB</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-value">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">MySQL</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                    <span class="skill-value">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">XAMPP</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 82%"></div>
+                                    </div>
+                                    <span class="skill-value">82%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">LaTeX</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                    <span class="skill-value">80%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Pandas</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-value">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">numpy</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-value">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Design & Modeling -->
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="category-icon">[03]</span>
+                                <span class="category-name">Design & Modeling</span>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Blender</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-value">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Unreal Engine</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                    <span class="skill-value">80%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">After Effects</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                    <span class="skill-value">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Adobe Illustrator</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <span class="skill-value">90%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Adobe Photoshop</span>
+                                    <div class="skill-meter">
+                                        <div class="skill-progress" style="width: 92%"></div>
+                                    </div>
+                                    <span class="skill-value">92%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scan-status">
+                        <div class="status-line">
+                            <span class="status-label">> System Status:</span>
+                            <span class="status-value">OPERATIONAL</span>
+                        </div>
+                        <div class="progress-line">
+                            <span class="progress-label">> Neural Network:</span>
+                            <div class="progress-track">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">> Contact.connect()</h2>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-title">establish_connection.exe</span>
+                </div>
+                <div class="terminal-content">
+                    <div id="contact-form" class="contact-form">
+                        <div class="form-line">
+                            <span class="prompt">$</span>
+                            <input type="text" placeholder="name.initialize()" class="matrix-input">
+                        </div>
+                        <div class="form-line">
+                            <span class="prompt">$</span>
+                            <input type="email" placeholder="email.validate()" class="matrix-input">
+                        </div>
+                        <div class="form-line">
+                            <span class="prompt">$</span>
+                            <textarea placeholder="message.send()" class="matrix-input"></textarea>
+                        </div>
+                        <button class="matrix-button">Execute Command</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script defer src="matrix.js"></script>
+    <script defer src="app.js"></script>
+    <button id="pageToggle" class="page-toggle">Decrypt reality</button>
+</body>
+</html>
