@@ -1,4 +1,4 @@
-const profileData = {
+export const profileData = {
     name: "Priyanshu",
     title: "Computer Science Engineer",
     contact: {
@@ -78,5 +78,3 @@ const profileData = {
         "Active social media manager for CCET"
     ]
 };
-
-export default profileData;

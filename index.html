@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matrix-themed portfolio website showcasing programming and development projects">
     <title>Matrix Dev</title>
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="matrix.js" as="script">
-    <link rel="preload" href="app.js" as="script">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles_correct.css">
     <link rel="stylesheet" href="transition.css">
-    <script defer src="theme-switcher.js"></script>
-    <script src="page-transition.js"></script>
 </head>
 <body>
     <!-- Matrix Background -->
-    <canvas id="matrixCanvas"></canvas>
+    <canvas id="matrixCanvas" aria-hidden="true"></canvas>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">[Matrix.Dev]</a>
+            <a href="#" class="nav-logo" aria-label="Matrix Dev Logo">[Matrix.Dev]</a>
+            <!-- Add mobile menu toggle -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
             <div class="nav-links">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
+                <a href="#gallery">Gallery</a>
             </div>
         </div>
     </nav>
+
+    <!-- Add Mobile Sidebar -->
+    <div class="mobile-sidebar" aria-label="Mobile navigation">
+        <div class="sidebar-header">
+            <span class="sidebar-title">[Matrix.Nav]</span>
+            <button class="sidebar-close" aria-label="Close navigation menu">×</button>
+        </div>
+        <div class="sidebar-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+    </div>
+
+    <!-- Add overlay -->
+    <div class="mobile-overlay"></div>
 
     <main>
         <!-- Hero Section -->
@@ -41,6 +65,8 @@
                 <p>{'role': 'Computer Science Engineer', 'status': 'active'}</p>
                 <button class="cta-button">VIEW PORTFOLIO</button>
             </div>
+            <!-- Add the decrypt button here -->
+            <button id="pageToggle" class="page-toggle" aria-label="Toggle theme">Decrypt reality</button>
         </section>
 
         <!-- About Section -->
@@ -259,7 +285,7 @@ const MatrixEffect = {
         "Interactive UI",
         "Matrix rain effect",
         "Terminal aesthetics",
-        "Responsive design"
+        "Responsive design",
     ]
 }</pre>
                             <div class="project-info">
@@ -289,6 +315,7 @@ const MatrixEffect = {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -366,7 +393,6 @@ const MatrixEffect = {
                                 </div>
                             </div>
                         </div>
-
                         <!-- Tools & Libraries -->
                         <div class="skill-category">
                             <div class="skill-header">
@@ -418,7 +444,6 @@ const MatrixEffect = {
                                 </div>
                             </div>
                         </div>
-
                         <!-- Design & Modeling -->
                         <div class="skill-category">
                             <div class="skill-header">
@@ -490,28 +515,30 @@ const MatrixEffect = {
                     <span class="terminal-title">establish_connection.exe</span>
                 </div>
                 <div class="terminal-content">
-                    <div id="contact-form" class="contact-form">
+                    <form id="contact-form" class="contact-form" aria-label="Contact form">
                         <div class="form-line">
                             <span class="prompt">$</span>
-                            <input type="text" placeholder="name.initialize()" class="matrix-input">
+                            <input type="text" placeholder="name.initialize()" class="matrix-input" required aria-label="Name">
                         </div>
                         <div class="form-line">
                             <span class="prompt">$</span>
-                            <input type="email" placeholder="email.validate()" class="matrix-input">
+                            <input type="email" placeholder="email.validate()" class="matrix-input" required aria-label="Email">
                         </div>
                         <div class="form-line">
                             <span class="prompt">$</span>
-                            <textarea placeholder="message.send()" class="matrix-input"></textarea>
+                            <textarea placeholder="message.send()" class="matrix-input" required aria-label="Message"></textarea>
                         </div>
-                        <button class="matrix-button">Execute Command</button>
-                    </div>
+                        <button type="submit" class="matrix-button">Execute Command</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <script defer src="matrix.js"></script>
-    <script defer src="app.js"></script>
-    <button id="pageToggle" class="page-toggle">Decrypt reality</button>
+    <!-- Scripts -->
+    <!-- <script src="matrix.js" defer></script> -->
+    <!-- <script src="page-transition.js"></script> -->
+    <!-- <script type="module" src="app.js" defer></script> -->
+    <!-- <script src="theme-switcher.js" defer></script> -->
 </body>
 </html>
